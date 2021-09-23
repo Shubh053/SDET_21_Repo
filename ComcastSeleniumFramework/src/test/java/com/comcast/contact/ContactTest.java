@@ -5,6 +5,10 @@ import org.testng.annotations.Test;
 public class ContactTest {
 	@Test(groups="SmokeTest")
 	public void createContactTest() {
+		String BROWSER = System.getProperty("browser");
+		String URL = System.getProperty("url");
+		System.out.println("===>" + URL);
+		System.out.println("===>" + BROWSER);
 		System.out.println("contact created");
 	}
 	
